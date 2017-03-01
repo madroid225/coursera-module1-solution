@@ -1,8 +1,8 @@
 (function () {
     'use strict';
 
-    angular.module('assignement1', [])
-    .controller('assignementController', Controller);
+    angular.module('LunchCheck', [])
+    .controller('LunchCheckController', Controller);
 
     Controller.$inject = ['$scope'];
     function Controller($scope) {
@@ -31,8 +31,6 @@
             }
             return $scope.lunchResult;
         };
-        //$scope.checkLunch();
-
 
     }
 

@@ -11,21 +11,20 @@
       <script src="app.js"></script>
 
   </head>
-<body ng-app="assignement1">
-   <div class="container" ng-controller="assignementController">
+<body ng-app="LunchCheck">
+   <div class="container" ng-controller="LunchCheckController">
      <h1>Lunch Checker</h1>
 
          <div class="form-group">
              <input id="lunch-menu" type="text"
              placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control" ng-model="lunch"><br/>
-             {{lunchResult}}
+             class="form-control" ng-model="lunch">
          </div>
          <div class="form-group">
              <button class="btn btn-default" ng-click="checkLunch()">Check If Too Much</button>
          </div>
          <div class="form-group message">
-           <!-- Your message can go here. -->
+             {{lunchResult}}
          </div>
    </div>
 
