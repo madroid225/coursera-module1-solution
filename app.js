@@ -10,13 +10,9 @@
 
         $scope.checkLunch = function () {
             var plates = $scope.lunch.split(",");
-            var plate = "";
-
-            var aa = plate.length;
 
             var platesCount = 0;
             for (var i = 0; i <= plates.length ; i++) {
-                plate = plates[i];
                 if (plates[i] != undefined) {
                     platesCount += (plates[i].trim().length > 0 ? 1 : 0);
                 }
@@ -35,7 +31,7 @@
             }
             return $scope.lunchResult;
         };
-        $scope.checkLunch();
+        //$scope.checkLunch();
 
 
     }
