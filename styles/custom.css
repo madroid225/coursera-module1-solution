@@ -1,0 +1,16 @@
+﻿body
+{
+}
+
+.messageColorOk{
+    color : green;
+}
+.messageColorError{
+    color:red;
+}
+.inputOk{
+    border-color : green;
+}
+.inputError{
+    border-color:red;
+}

@@ -7,6 +7,7 @@
     Controller.$inject = ['$scope'];
     function Controller($scope) {
         $scope.lunch = "";
+        $scope.status = "";
 
         $scope.checkLunch = function () {
             var plates = $scope.lunch.split(",");
@@ -20,11 +21,13 @@
 
             var aetTooMuch = (platesCount > 3);
 
+            $scope.status = "Ok";
             if (aetTooMuch) {
                 $scope.lunchResult = "Ate too much!";
             }else{
                 if (platesCount == 0) {
                     $scope.lunchResult = "Please enter data first";
+                    $scope.status = "Error";
                 } else {
                     $scope.lunchResult = "Enjoy!";
                 }
